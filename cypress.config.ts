@@ -1,4 +1,3 @@
-import '@cypress/instrument-cra'
 import {defineConfig} from 'cypress'
 import plugins from './cypress/support/plugins'
 import tasks from './cypress/support/tasks'
