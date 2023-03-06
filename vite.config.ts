@@ -1,9 +1,19 @@
 import {defineConfig} from 'vite'
 import path from 'path'
 import react from '@vitejs/plugin-react'
+import istanbul from 'vite-plugin-istanbul'
 
 export default defineConfig({
-  plugins: [react()],
+  build: {
+    sourcemap: true,
+  },
+  plugins: [
+    react(),
+    istanbul({
+      cypress: true,
+      requireEnv: false,
+    }),
+  ],
   resolve: {
     alias: {
       components: path.resolve(__dirname, 'src', 'components'),
