@@ -6,7 +6,7 @@
       "@support/*": ["../cypress/support/*"],
       "@fixtures/*": ["../cypress/fixtures/*"]
     },
-    "target": "esnext",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["cypress", "node", "@testing-library/cypress"],
     "allowJs": true,
