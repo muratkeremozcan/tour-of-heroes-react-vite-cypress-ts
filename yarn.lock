@@ -12091,7 +12091,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-istanbul@^4.0.1:
+vite-plugin-istanbul@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/vite-plugin-istanbul/-/vite-plugin-istanbul-4.0.1.tgz#4641f95a914334c013a79ff124c2cfb94cf27000"
   integrity sha512-1fUCJyYvt/vkDQWR/15knwCk+nWmNbVbmZTXf/X4XD0dcdmJsYrZF5JQo7ttYxFyflGH2SVu+XRlpN06CakKPQ==
