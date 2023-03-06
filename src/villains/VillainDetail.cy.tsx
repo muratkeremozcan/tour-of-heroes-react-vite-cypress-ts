@@ -1,7 +1,7 @@
 import VillainDetail from './VillainDetail'
 
 import React from 'react'
-import * as postHook from 'hooks/usePostEntity'
+// import * as postHook from 'hooks/usePostEntity' // TODO: wait for https://github.com/cypress-io/cypress/issues/22355
 import '@testing-library/cypress/add-commands'
 
 describe('VillainDetail', () => {
@@ -12,7 +12,7 @@ describe('VillainDetail', () => {
   it('should handle Save', () => {
     // example of testing implementation details
     cy.spy(React, 'useState').as('useState')
-    cy.spy(postHook, 'usePostEntity').as('usePostEntity')
+    // cy.spy(postHook, 'usePostEntity').as('usePostEntity') // TODO: wait for https://github.com/cypress-io/cypress/issues/22355
     // instead prefer to test at a higher level
     cy.intercept('POST', '*', {statusCode: 200}).as('postVillain')
     cy.getByCy('save-button').click()
@@ -21,7 +21,7 @@ describe('VillainDetail', () => {
     cy.wait('@postVillain')
     // test implementation details (what not to do)
     cy.get('@useState').should('have.been.called')
-    cy.get('@usePostEntity').should('have.been.called')
+    // cy.get('@usePostEntity').should('have.been.called') // TODO: wait for https://github.com/cypress-io/cypress/issues/22355
   })
 
   it('should handle non-200 Save', () => {
