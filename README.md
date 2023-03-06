@@ -1,13 +1,9 @@
-<!-- [![codecov](https://codecov.io/gh/muratkeremozcan/tour-of-heroes-react-cypress-ts/branch/main/graph/badge.svg?token=rzXA9jQCdR)](https://codecov.io/gh/muratkeremozcan/tour-of-heroes-react-cypress-ts) -->
-
 [![unit-lint-typecheck-e2e-ct](https://github.com/muratkeremozcan/tour-of-heroes-react-vite-cypress-ts/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/muratkeremozcan/tour-of-heroes-react-vite-cypress-ts/actions/workflows/main.yml)
 
 ![react version](https://img.shields.io/badge/react-18.2.0-brightgreen)
-![cypress version](https://img.shields.io/badge/cypress-12.0.1-brightgreen)
+![cypress version](https://img.shields.io/badge/cypress-12.7.0-brightgreen)
 ![typescript version](https://img.shields.io/badge/typescript-4.8.3-brightgreen)
-![jest version](https://img.shields.io/badge/jest-27.5.1-brightgreen)
-![eslint version](https://img.shields.io/badge/eslint-8.29.0-brightgreen)
-![prettier version](https://img.shields.io/badge/prettier-2.8.1-brightgreen)
+![vite version](https://img.shields.io/badge/vite-4.1.4-brightgreen)
 [![renovate-app badge][renovate-badge]][renovate-app]
 
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
