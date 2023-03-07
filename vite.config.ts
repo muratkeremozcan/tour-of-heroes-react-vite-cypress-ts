@@ -25,6 +25,8 @@ export default defineConfig({
       heroes: path.resolve(__dirname, 'src', 'heroes'),
       hooks: path.resolve(__dirname, 'src', 'hooks'),
       models: path.resolve(__dirname, 'src', 'models'),
+      '@support': path.resolve(__dirname, 'cypress', 'support'),
+      '@fixtures': path.resolve(__dirname, 'cypress', 'fixtures'),
     },
   },
 })
