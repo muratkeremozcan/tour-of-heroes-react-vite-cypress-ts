@@ -1,5 +1,5 @@
 import VillainList from './VillainList'
-import {wrappedRender, screen, waitFor} from 'test-utils'
+import {wrappedRender, screen, waitFor} from '../test-utils'
 import userEvent from '@testing-library/user-event'
 import {villains} from '../../db.json'
 import VillainsContext from 'hooks/useVillainsContext'
