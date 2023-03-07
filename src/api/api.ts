@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {Hero} from 'models/Hero'
+import {Hero} from '@models/Hero'
 
 export type CrudType = 'GET' | 'POST' | 'PUT' | 'DELETE'
 export type CrudOptions = {item?: Hero | object; config?: object}
@@ -7,7 +7,7 @@ export type CrudOptions = {item?: Hero | object; config?: object}
 export const client = (route: string, method: CrudType, item?: Hero | object) =>
   axios({
     method,
-    baseURL: `${import.meta.env.VITE_API_URL}/${route}`,
+    baseURL: `${process.env.VITE_API_URL}/${route}`,
     data: method === 'POST' || method === 'PUT' ? item : undefined,
   })
     .then(res => res.data)

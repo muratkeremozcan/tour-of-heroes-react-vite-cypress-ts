@@ -1,14 +1,14 @@
 import {useState} from 'react'
 import {useNavigate, Routes, Route} from 'react-router-dom'
-import ListHeader from 'components/ListHeader'
-import ModalYesNo from 'components/ModalYesNo'
-import ErrorComp from 'components/ErrorComp'
+import ListHeader from '@components/ListHeader'
+import ModalYesNo from '@components/ModalYesNo'
+import ErrorComp from '@components/ErrorComp'
 import VillainList from './VillainList'
 import VillainDetail from './VillainDetail'
-import {useGetEntities} from 'hooks/useGetEntities'
-import {useDeleteEntity} from 'hooks/useDeleteEntity'
-import {Villain} from 'models/Villain'
-import VillainsContext from 'hooks/useVillainsContext'
+import {useGetEntities} from '@hooks/useGetEntities'
+import {useDeleteEntity} from '@hooks/useDeleteEntity'
+import {Villain} from '@models/Villain'
+import VillainsContext from '@hooks/useVillainsContext'
 
 export default function Villains() {
   const [showModal, setShowModal] = useState<boolean>(false)

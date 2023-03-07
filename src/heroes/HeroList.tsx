@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
-import CardContent from 'components/CardContent'
-import ButtonFooter from 'components/ButtonFooter'
+import CardContent from '@components/CardContent'
+import ButtonFooter from '@components/ButtonFooter'
 import {FaEdit, FaRegSave} from 'react-icons/fa'
 import {
   ChangeEvent,
@@ -10,8 +10,8 @@ import {
   useState,
   useDeferredValue,
 } from 'react'
-import {Hero} from 'models/Hero'
-import {HeroProperty} from 'models/types'
+import {Hero} from '@models/Hero'
+import {HeroProperty} from '@models/types'
 import {curry} from 'ramda'
 
 type HeroListProps = {

@@ -1,5 +1,5 @@
 import {createContext, useContext, SetStateAction, Dispatch} from 'react'
-import {Villain} from 'models/Villain'
+import {Villain} from '@models/Villain'
 
 // Context api lets us pass a value deep into the component tree
 // without explicitly threading it through every component (2nd tier state management)

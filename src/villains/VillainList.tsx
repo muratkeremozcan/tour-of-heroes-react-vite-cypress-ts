@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
-import CardContent from 'components/CardContent'
-import ButtonFooter from 'components/ButtonFooter'
+import CardContent from '@components/CardContent'
+import ButtonFooter from '@components/ButtonFooter'
 import {FaEdit, FaRegSave} from 'react-icons/fa'
 import {
   ChangeEvent,
@@ -10,8 +10,8 @@ import {
   useState,
   useDeferredValue,
 } from 'react'
-import {useVillainsContext} from 'hooks/useVillainsContext'
-import {Villain} from 'models/Villain'
+import {useVillainsContext} from '@hooks/useVillainsContext'
+import {Villain} from '@models/Villain'
 
 type VillainListProps = {
   handleDeleteVillain: (

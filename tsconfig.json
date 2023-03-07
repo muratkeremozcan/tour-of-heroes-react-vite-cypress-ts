@@ -4,9 +4,15 @@
     "paths": {
       "@cypress/*": ["../cypress/*"],
       "@support/*": ["../cypress/support/*"],
-      "@fixtures/*": ["../cypress/fixtures/*"]
+      "@fixtures/*": ["../cypress/fixtures/*"],
+      "@components/*": ["components/*"],
+      "@villains/*": ["villains/*"],
+      "@boys/*": ["boys/*"],
+      "@heroes/*": ["heroes/*"],
+      "@hooks/*": ["hooks/*"],
+      "@models/*": ["models/*"]
     },
-    "target": "es6",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["cypress", "node", "@testing-library/cypress"],
     "allowJs": true,

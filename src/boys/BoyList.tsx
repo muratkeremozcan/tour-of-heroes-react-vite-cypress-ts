@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
-import CardContent from 'components/CardContent'
-import ButtonFooter from 'components/ButtonFooter'
+import CardContent from '@components/CardContent'
+import ButtonFooter from '@components/ButtonFooter'
 import {FaEdit, FaRegSave} from 'react-icons/fa'
 import {
   ChangeEvent,
@@ -10,8 +10,8 @@ import {
   useState,
   useDeferredValue,
 } from 'react'
-import {Boy} from 'models/Boy'
-import {BoyProperty} from 'models/types'
+import {Boy} from '@models/Boy'
+import {BoyProperty} from '@models/types'
 import {
   indexOf,
   find,

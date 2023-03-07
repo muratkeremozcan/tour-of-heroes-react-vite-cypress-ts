@@ -2,16 +2,16 @@ import {lazy, Suspense} from 'react'
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import {QueryClient, QueryClientProvider} from 'react-query'
 import {ErrorBoundary} from 'react-error-boundary'
-import HeaderBar from 'components/HeaderBar'
-import NavBar from 'components/NavBar'
-import PageSpinner from 'components/PageSpinner'
-import ErrorComp from 'components/ErrorComp'
-import Villains from 'villains/Villains'
-import Boys from 'boys/Boys'
+import HeaderBar from '@components/HeaderBar'
+import NavBar from '@components/NavBar'
+import PageSpinner from '@components/PageSpinner'
+import ErrorComp from '@components/ErrorComp'
+import Villains from '@villains/Villains'
+import Boys from '@boys/Boys'
 import './styles.scss'
-const Heroes = lazy(() => import('heroes/Heroes'))
-const NotFound = lazy(() => import('components/NotFound'))
-const About = lazy(() => import('About'))
+const Heroes = lazy(() => import('@heroes/Heroes'))
+const NotFound = lazy(() => import('@components/NotFound'))
+const About = lazy(() => import('./About'))
 
 const queryClient = new QueryClient()
 

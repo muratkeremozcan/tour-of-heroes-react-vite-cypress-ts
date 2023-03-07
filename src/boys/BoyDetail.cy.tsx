@@ -1,7 +1,7 @@
 import BoyDetail from './BoyDetail'
 
 import React from 'react'
-// import * as postHook from 'hooks/usePostEntity' // TODO: wait for https://github.com/cypress-io/cypress/issues/22355
+// import * as postHook from '@hooks/usePostEntity' // TODO: wait for https://github.com/cypress-io/cypress/issues/22355
 import '@testing-library/cypress/add-commands'
 
 describe('BoyDetail', () => {
