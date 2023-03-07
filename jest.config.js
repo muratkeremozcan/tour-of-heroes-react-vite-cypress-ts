@@ -89,7 +89,14 @@ module.exports = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '^components/(.*)$': '<rootDir>/src/components/$1',
+    '^villains/(.*)$': '<rootDir>/src/villains/$1',
+    '^boys/(.*)$': '<rootDir>/src/boys/$1',
+    '^heroes/(.*)$': '<rootDir>/src/heroes/$1',
+    '^hooks/(.*)$': '<rootDir>/src/hooks/$1',
+    '^models/(.*)$': '<rootDir>/src/models/$1',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -125,9 +132,7 @@ module.exports = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  // roots: [
-  //   "<rootDir>"
-  // ],
+  roots: ['<rootDir>/src'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -136,7 +141,7 @@ module.exports = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  // setupFilesAfterEnv: [],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,

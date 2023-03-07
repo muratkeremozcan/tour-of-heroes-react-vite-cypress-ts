@@ -1,5 +1,5 @@
 import HeroList from './HeroList'
-import {wrappedRender, screen, waitFor} from 'test-utils'
+import {wrappedRender, screen, waitFor} from '../test-utils'
 import userEvent from '@testing-library/user-event'
 import {heroes} from '../../db.json'
 

@@ -11,7 +11,7 @@ import Boys from 'boys/Boys'
 import './styles.scss'
 const Heroes = lazy(() => import('heroes/Heroes'))
 const NotFound = lazy(() => import('components/NotFound'))
-const About = lazy(() => import('About'))
+const About = lazy(() => import('./About'))
 
 const queryClient = new QueryClient()
 

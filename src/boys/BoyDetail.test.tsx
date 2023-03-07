@@ -1,6 +1,6 @@
 import BoyDetail from './BoyDetail'
 import '@testing-library/jest-dom'
-import {wrappedRender, act, screen, waitFor} from 'test-utils'
+import {wrappedRender, act, screen, waitFor} from '../test-utils'
 import userEvent from '@testing-library/user-event'
 
 describe('BoyDetail', () => {

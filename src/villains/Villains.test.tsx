@@ -1,5 +1,5 @@
 import Villains from './Villains'
-import {wrappedRender, screen, waitForElementToBeRemoved} from 'test-utils'
+import {wrappedRender, screen, waitForElementToBeRemoved} from '../test-utils'
 import userEvent from '@testing-library/user-event'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
@@ -14,9 +14,8 @@ describe('Villains', () => {
 
   it('should see error on initial load with GET', async () => {
     const handlers = [
-      rest.get(
-        `${import.meta.env.VITE_API_URL}/villains`,
-        async (_req, res, ctx) => res(ctx.status(500)),
+      rest.get(`${process.env.VITE_API_URL}/villains`, async (_req, res, ctx) =>
+        res(ctx.status(500)),
       ),
     ]
     const server = setupServer(...handlers)
@@ -43,12 +42,11 @@ describe('Villains', () => {
 
   describe('200 flows', () => {
     const handlers = [
-      rest.get(
-        `${import.meta.env.VITE_API_URL}/villains`,
-        async (_req, res, ctx) => res(ctx.status(200), ctx.json(villains)),
+      rest.get(`${process.env.VITE_API_URL}/villains`, async (_req, res, ctx) =>
+        res(ctx.status(200), ctx.json(villains)),
       ),
       rest.delete(
-        `${import.meta.env.VITE_API_URL}/villains/${villains[0].id}`, // use /.*/ for all requests
+        `${process.env.VITE_API_URL}/villains/${villains[0].id}`, // use /.*/ for all requests
         async (_req, res, ctx) =>
           res(ctx.status(400), ctx.json('expected error')),
       ),
