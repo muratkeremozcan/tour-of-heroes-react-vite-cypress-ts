@@ -15,7 +15,7 @@ export default defineConfig({
       cypress: true,
       requireEnv: false,
     }),
-    EnvironmentPlugin('all'),
+    EnvironmentPlugin(['VITE_API_URL']),
   ],
   resolve: {
     alias: {
