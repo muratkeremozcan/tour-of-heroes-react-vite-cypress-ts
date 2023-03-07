@@ -27,6 +27,7 @@ export default defineConfig({
       models: path.resolve(__dirname, 'src', 'models'),
       '@support': path.resolve(__dirname, 'cypress', 'support'),
       '@fixtures': path.resolve(__dirname, 'cypress', 'fixtures'),
+      '@cypress': path.resolve(__dirname, 'cypress'),
     },
   },
 })
