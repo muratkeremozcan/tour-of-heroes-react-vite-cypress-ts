@@ -43,7 +43,7 @@
     "react-query": "3.39.3",
     "react-router-dom": "6.9.0",
     "react-scripts": "5.0.1",
-    "sass": "1.59.2",
+    "sass": "1.59.3",
     "vite": "4.1.4",
     "web-vitals": "3.3.0"
   },
