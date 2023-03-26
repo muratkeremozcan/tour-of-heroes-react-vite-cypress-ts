@@ -68,7 +68,7 @@
     "@typescript-eslint/parser": "5.56.0",
     "concurrently": "7.6.0",
     "cypress": "12.8.1",
-    "esbuild": "0.17.13",
+    "esbuild": "0.17.14",
     "eslint": "8.36.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-config-react-app": "7.0.1",
