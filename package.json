@@ -48,7 +48,7 @@
     "web-vitals": "3.3.0"
   },
   "devDependencies": {
-    "@bahmutov/cypress-code-coverage": "2.2.0",
+    "@bahmutov/cypress-code-coverage": "2.3.0",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@esbuild-plugins/node-globals-polyfill": "0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "0.2.2",
