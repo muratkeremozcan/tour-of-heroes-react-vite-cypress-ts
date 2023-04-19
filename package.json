@@ -42,7 +42,6 @@
     "react-icons": "4.8.0",
     "react-query": "3.39.3",
     "react-router-dom": "6.10.0",
-    "react-scripts": "5.0.1",
     "sass": "1.62.0",
     "vite": "4.2.2",
     "web-vitals": "3.3.1"
@@ -50,9 +49,11 @@
   "devDependencies": {
     "@bahmutov/cypress-code-coverage": "2.5.1",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
+    "@cypress/vite-plugin-proxify-esm": "0.0.3",
     "@esbuild-plugins/node-globals-polyfill": "0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "0.2.2",
     "@faker-js/faker": "7.6.0",
+    "@lmiller1990/vite-plugin-proxify-esm": "^0.0.3",
     "@testing-library/cypress": "9.0.0",
     "@testing-library/dom": "9.2.0",
     "@testing-library/jest-dom": "5.16.5",
