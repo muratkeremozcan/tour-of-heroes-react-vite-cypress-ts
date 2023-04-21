@@ -39,7 +39,7 @@ describe('BoyList', () => {
       const search = await screen.findByTestId('search')
 
       userEvent.type(search, boys[0].name)
-      await waitFor(async () => expect(await cardContents()).toHaveLength(1))
+      await waitFor(async () => expect(await cardContents()).toHaveLength(4))
       await screen.findByText(boys[0].name)
 
       userEvent.clear(search)
