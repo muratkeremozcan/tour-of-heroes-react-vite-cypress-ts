@@ -12,16 +12,7 @@ import {
 } from 'react'
 import {Boy} from 'models/Boy'
 import {BoyProperty} from 'models/types'
-import {
-  indexOf,
-  find,
-  curry,
-  toLower,
-  pipe,
-  values,
-  filter,
-  Dictionary,
-} from 'ramda'
+import {indexOf, find, curry, toLower, pipe, values, filter} from 'ramda'
 
 type BoyListProps = {
   boys: Boy[]
@@ -53,18 +44,18 @@ export default function BoyList({boys, handleDeleteBoy}: BoyListProps) {
     indexOf(toLower(searchField), toLower(searchProperty)) !== -1
 
   /** finds the given boy's property in the search field  */
-  const propertyExists = curry((searchField: string, item: Boy) =>
-    pipe(
-      values,
-      find((property: BoyProperty) => searchExists(searchField, property)),
-    )(item),
+  const propertyExists = curry(
+    (searchField: string, item: Boy) =>
+      !!pipe(
+        values,
+        find((property: BoyProperty) => searchExists(searchField, property)),
+      )(item),
   )
   /** given the search field and the boy array, returns the boy in which the search field exists */
   const searchProperties = (
     searchField: string,
-  ): (<P extends Boy, C extends readonly P[] | Dictionary<P>>(
-    collection: C,
-  ) => C) => filter(propertyExists(searchField))
+  ): (<P extends Boy, C extends readonly P[]>(collection: C) => C) =>
+    filter(propertyExists(searchField) as (value: unknown) => boolean)
 
   /** filters the boys data to see if the any of the properties exist in the list */
   const handleSearch =
