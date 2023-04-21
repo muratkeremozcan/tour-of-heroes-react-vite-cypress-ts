@@ -2091,12 +2091,12 @@
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/ramda@0.28.23":
-  version "0.28.23"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.28.23.tgz#d04279865a86c330c03c99ac61161d9905f276f5"
-  integrity sha512-9TYWiwkew+mCMsL7jZ+kkzy6QXn8PL5/SKmBPmjgUlTpkokZWTBr+OhiIUDztpAEbslWyt24NNfEmZUBFmnXig==
+"@types/ramda@0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.29.0.tgz#4f226db24764dde77c60e1f601c357894bcfb7cc"
+  integrity sha512-TY9eKsklU43CmAbFJPKDUyBjleZ4EFAkbJeQRF4e8byGkOw1CjDcwg5EGa0Bgf0Kgs9BE9OU4UzQWnQDHnvMtA==
   dependencies:
-    ts-toolbelt "^6.15.1"
+    types-ramda "^0.29.1"
 
 "@types/react-dom@18.0.11":
   version "18.0.11"
@@ -4460,10 +4460,10 @@ eslint-plugin-chai-friendly@0.7.2:
   resolved "https://registry.npmjs.org/eslint-plugin-chai-friendly/-/eslint-plugin-chai-friendly-0.7.2.tgz"
   integrity sha512-LOIfGx5sZZ5FwM1shr2GlYAWV9Omdi+1/3byuVagvQNoGUuU0iHhp7AfjA1uR+4dJ4Isfb4+FwBJgQajIw9iAg==
 
-eslint-plugin-cypress@2.12.1:
-  version "2.12.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-cypress/-/eslint-plugin-cypress-2.12.1.tgz"
-  integrity sha512-c2W/uPADl5kospNDihgiLc7n87t5XhUbFDoTl6CfVkmG+kDAb5Ux10V9PoLPu9N+r7znpc+iQlcmAqT1A/89HA==
+eslint-plugin-cypress@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-2.13.2.tgz#b42b763f449ff713cecf6bdf1903e7cee6e48bfc"
+  integrity sha512-LlwjnBTzuKuC0A4H0RxVjs0YeAWK+CD1iM9Dp8un3lzT713ePQxfpPstCD+9HSAss8emuE3b2hCNUST+NrUwKw==
   dependencies:
     globals "^11.12.0"
 
@@ -9175,10 +9175,10 @@ ts-jest@27.1.4:
     semver "7.x"
     yargs-parser "20.x"
 
-ts-toolbelt@^6.15.1:
-  version "6.15.5"
-  resolved "https://registry.npmjs.org/ts-toolbelt/-/ts-toolbelt-6.15.5.tgz"
-  integrity sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==
+ts-toolbelt@^9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-9.6.0.tgz#50a25426cfed500d4a09bd1b3afb6f28879edfd5"
+  integrity sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"
@@ -9287,6 +9287,13 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
+
+types-ramda@^0.29.1:
+  version "0.29.1"
+  resolved "https://registry.yarnpkg.com/types-ramda/-/types-ramda-0.29.1.tgz#08c6ddf583ba359ec1113c7069e30a44ef73896d"
+  integrity sha512-pdEF8VXcBTSu3fPupZahieG6Lh8eBWPtcaH/OB5QPCoN2hz4vBbspoMLB3X9kwzXRD3lwD4/j0hwj3Z/PAzzcA==
+  dependencies:
+    ts-toolbelt "^9.6.0"
 
 typescript@4.8.3:
   version "4.8.3"

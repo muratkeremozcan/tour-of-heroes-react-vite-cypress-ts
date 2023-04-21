@@ -1,3 +1,4 @@
+/* eslint-disable cypress/unsafe-to-chain-command */
 import {faker} from '@faker-js/faker'
 import {Hero} from '../../src/models/Hero'
 import '@testing-library/cypress/add-commands'
