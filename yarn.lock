@@ -1751,13 +1751,13 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@lmiller1990/vite-plugin-proxify-esm@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@lmiller1990/vite-plugin-proxify-esm/-/vite-plugin-proxify-esm-0.0.3.tgz#269d530012bb9b7d122c35eeaee7ad1c5175cfc3"
-  integrity sha512-K59Wn2d2MCe5swRgYe+bdGyLyJrjjiyeNzCK0iqIi28X7I0yT41s3jzd4QHYSQV0NwldOM6OITW++UYP9Huuew==
+"@lmiller1990/vite-plugin-cypress-esm@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@lmiller1990/vite-plugin-cypress-esm/-/vite-plugin-cypress-esm-0.4.0.tgz#f9d20207848345c492176ee5611c4ba43c952183"
+  integrity sha512-jXSO+g0o9Yb3J76BQlHy+7tD7GHj+0aA5s7zLMU1YZfRwAgOGiywKOBDIlo9YPvQeW6hB/y8whiVJG1HG/OpTw==
   dependencies:
     debug "^4.3.4"
-    semver "^7.3.2"
+    picomatch "2.3.1"
 
 "@mswjs/cookies@^0.2.2":
   version "0.2.2"
@@ -7743,7 +7743,7 @@ picocolors@^1.0.0:
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz"
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.1:
+picomatch@2.3.1, picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==

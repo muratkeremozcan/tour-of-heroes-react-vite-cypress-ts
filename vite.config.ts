@@ -3,7 +3,7 @@ import path from 'path'
 import react from '@vitejs/plugin-react' // cy code cov
 import istanbul from 'vite-plugin-istanbul' // cy code cov
 import EnvironmentPlugin from 'vite-plugin-environment' // to be able to use process.env.
-import {CypressMocks} from '@lmiller1990/vite-plugin-proxify-esm'
+import {CypressEsm} from '@lmiller1990/vite-plugin-cypress-esm'
 
 export default defineConfig({
   server: {port: 3000},
@@ -17,7 +17,9 @@ export default defineConfig({
       requireEnv: false,
     }),
     EnvironmentPlugin(['VITE_API_URL']),
-    CypressMocks(),
+    CypressEsm({
+      ignoreList: ['*react*'],
+    }),
   ],
   resolve: {
     alias: {
