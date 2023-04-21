@@ -2,6 +2,9 @@ import {defineConfig} from 'cypress'
 import plugins from './cypress/support/plugins'
 import tasks from './cypress/support/tasks'
 import esbuildPreprocessor from './cypress/support/esbuild-preprocessor'
+import viteConfig from './vite.config'
+import {mergeConfig} from 'vite'
+import {CypressEsm} from '@lmiller1990/vite-plugin-cypress-esm'
 
 export default defineConfig({
   projectId: 'x953wq',
@@ -36,6 +39,14 @@ export default defineConfig({
     devServer: {
       framework: 'react',
       bundler: 'vite',
+      viteConfig: () =>
+        mergeConfig(viteConfig, {
+          plugins: [
+            CypressEsm({
+              ignoreList: ['*react*'],
+            }),
+          ],
+        }),
     },
   },
 })
