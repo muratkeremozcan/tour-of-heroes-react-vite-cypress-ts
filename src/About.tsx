@@ -1,4 +1,4 @@
-function About() {
+export default function About() {
   return (
     <div data-cy="about" className="content-container">
       <div className="content-title-group not-found">
@@ -36,5 +36,3 @@ function About() {
     </div>
   )
 }
-
-export default About
