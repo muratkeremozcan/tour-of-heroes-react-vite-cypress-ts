@@ -30,7 +30,7 @@
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "3.1.0",
+    "@vitejs/plugin-react": "4.0.0",
     "axios": "0.27.2",
     "bulma": "0.9.4",
     "json-server": "0.17.1",
