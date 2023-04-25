@@ -16,7 +16,8 @@ The Webpack version of the application can be found
 [here](https://github.com/muratkeremozcan/tour-of-heroes-react-cypress-ts).
 
 ```bash
-yarn install --registry https://registry.yarnpkg.com # specify the registry in case you are using a proprietary registry
+# specify the registry in case you are using a proprietary registry
+yarn install --registry https://registry.yarnpkg.com
 
 # parallel unit, typecheck, lint, format
 yarn validate
