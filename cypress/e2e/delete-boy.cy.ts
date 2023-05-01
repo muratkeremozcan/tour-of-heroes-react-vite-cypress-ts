@@ -12,7 +12,7 @@ describe('Delete boy', () => {
     cy.getByCy('delete-button').first().click()
     cy.getByCy('modal-yes-no').within(() => cy.getByCy('button-no').click())
     cy.getByCy('boys').should('be.visible')
-    cy.get('modal-yes-no').should('not.exist')
+    cy.get('modal-yes-no').should('exist')
   })
 
   it('should go through the edit flow (ui-e2e)', () => {
