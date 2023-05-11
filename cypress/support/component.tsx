@@ -27,3 +27,5 @@ Cypress.Commands.add(
     return cy.mount(wrapped, options)
   },
 )
+
+/* istanbul ignore file */
