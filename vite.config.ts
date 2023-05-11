@@ -1,7 +1,7 @@
 import {defineConfig} from 'vite'
 import path from 'path'
-import react from '@vitejs/plugin-react' // cy code cov
-import istanbul from 'vite-plugin-istanbul' // cy code cov
+import react from '@vitejs/plugin-react'
+
 import EnvironmentPlugin from 'vite-plugin-environment' // to be able to use process.env.
 
 export default defineConfig({
@@ -9,14 +9,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  plugins: [
-    react(),
-    istanbul({
-      cypress: true,
-      requireEnv: false,
-    }),
-    EnvironmentPlugin(['VITE_API_URL']),
-  ],
+  plugins: [react(), EnvironmentPlugin(['VITE_API_URL'])],
   resolve: {
     alias: {
       components: path.resolve(__dirname, 'src', 'components'),
