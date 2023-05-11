@@ -4,7 +4,6 @@ import tasks from './cypress/support/tasks'
 import esbuildPreprocessor from './cypress/support/esbuild-preprocessor'
 import viteConfig from './vite.config'
 import {mergeConfig} from 'vite'
-import istanbul from 'vite-plugin-istanbul' // cy code cov
 import {CypressEsm} from '@cypress/vite-plugin-cypress-esm'
 
 export default defineConfig({
@@ -45,10 +44,6 @@ export default defineConfig({
           plugins: [
             CypressEsm({
               ignoreList: ['*react*'],
-            }),
-            istanbul({
-              cypress: true,
-              requireEnv: false,
             }),
           ],
         }),
