@@ -4,7 +4,7 @@ import tasks from './cypress/support/tasks'
 import esbuildPreprocessor from './cypress/support/esbuild-preprocessor'
 import viteConfig from './vite.config'
 import {mergeConfig} from 'vite'
-import {CypressEsm} from '@lmiller1990/vite-plugin-cypress-esm'
+import {CypressEsm} from '@cypress/vite-plugin-cypress-esm'
 
 export default defineConfig({
   projectId: 'x953wq',

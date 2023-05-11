@@ -13,3 +13,5 @@ Cypress.Commands.add('getByCyLike', (selector, ...args) =>
 Cypress.Commands.add('getByClassLike', (selector, ...args) =>
   cy.get(`[class*=${selector}]`, ...args),
 )
+
+/* istanbul ignore file */

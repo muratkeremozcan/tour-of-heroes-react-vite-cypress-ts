@@ -51,3 +51,5 @@ export default function App() {
 
 // For components to access a shared React Query cache,
 // we make the cache available by wrapping our app JSX in a provider component
+
+/* istanbul ignore file */

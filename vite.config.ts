@@ -1,6 +1,6 @@
 import {defineConfig} from 'vite'
 import path from 'path'
-import react from '@vitejs/plugin-react' // cy code cov
+import react from '@vitejs/plugin-react'
 import istanbul from 'vite-plugin-istanbul' // cy code cov
 import EnvironmentPlugin from 'vite-plugin-environment' // to be able to use process.env.
 
