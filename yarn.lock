@@ -1107,10 +1107,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@bahmutov/cypress-code-coverage@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@bahmutov/cypress-code-coverage/-/cypress-code-coverage-2.5.1.tgz#361172b0182e89ecbe4857ca77dfa2c2655913b4"
-  integrity sha512-kN21+JVMezbZ+uVklh15d7rZU3PR+SSqLmjha6axrYJYv6bmg/vLzN6a6GHWBRdlKqwIh9hdvVgNJillQgF1Og==
+"@bahmutov/cypress-code-coverage@2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@bahmutov/cypress-code-coverage/-/cypress-code-coverage-2.6.1.tgz#c2140a986d3b48ef01e7e2d133e4cdd3c2bb8daa"
+  integrity sha512-oK6RP+537hcIB90QdI4m/u95Pr7YYgbD4PwoDJr924t6viiN8hSc1f3BbD5D8Xuq9JagXLes68l7+lR0cBI9Hg==
   dependencies:
     "@actions/core" "^1.10.0"
     "@cypress/browserify-preprocessor" "3.0.2"
