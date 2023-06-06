@@ -121,7 +121,7 @@ jobs:
           wait-on: 'http://localhost:3000'
           browser: chrome
           # if you want to enable parallelization
-          record: true
+          record: false
           parallel: true
           group: e2e-tests
           tag: e2e-tests
@@ -173,7 +173,7 @@ jobs:
           component: true
           browser: chrome
           # if you want to enable parallelization
-          record: true
+          record: false
           parallel: true
           group: ct-tests
           tag: ct-tests
