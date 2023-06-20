@@ -6,6 +6,11 @@
       "@support/*": ["../cypress/support/*"],
       "@fixtures/*": ["../cypress/fixtures/*"]
     },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["cypress", "node", "@testing-library/cypress"],
