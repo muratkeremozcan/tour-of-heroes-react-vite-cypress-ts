@@ -6,9 +6,6 @@ import type {Villain} from './models/types/Villain'
 import type {Boy} from './models/types/Boy'
 import 'vite/client'
 
-export declare module '*.css'
-export declare module '*.module.css'
-
 export {}
 declare global {
   namespace Cypress {
