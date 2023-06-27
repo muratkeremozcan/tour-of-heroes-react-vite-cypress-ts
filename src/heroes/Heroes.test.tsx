@@ -48,7 +48,7 @@ describe('Heroes', () => {
       rest.delete(
         `${process.env.VITE_API_URL}/heroes/${heroes[0].id}`, // use /.*/ for all requests
         async (_req, res, ctx) =>
-          res(ctx.status(400), ctx.json('expected error')),
+          res(ctx.status(500), ctx.json('expected error')),
       ),
     ]
     const server = setupServer(...handlers)
@@ -89,9 +89,8 @@ describe('Heroes', () => {
       await invokeHeroDelete()
       await userEvent.click(await screen.findByTestId('button-yes'))
 
-      expect(maybeModalYesNo()).not.toBeInTheDocument()
-      expect(await screen.findByTestId('error')).toBeVisible()
       expect(screen.queryByTestId('modal-dialog')).not.toBeInTheDocument()
+      expect(await screen.findByTestId('error')).toBeVisible()
     })
   })
 })

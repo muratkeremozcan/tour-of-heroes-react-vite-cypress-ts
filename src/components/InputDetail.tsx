@@ -31,8 +31,9 @@ export default function InputDetail({
         role={name}
         defaultValue={shownValue}
         placeholder={placeholder}
-        // @ts-expect-error simulate async delay
-        onChange={() => setTimeout(onChange, 3000)}
+        onChange={onChange}
+        // // @ts-expect-error simulate async delay
+        // onChange={() => setTimeout(onChange, 3000)}
         readOnly={readOnly}
         className="input"
         type="text"

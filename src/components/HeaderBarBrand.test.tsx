@@ -1,5 +1,6 @@
+/* eslint-disable testing-library/no-unnecessary-act */
 import HeaderBarBrand from './HeaderBarBrand'
-import {render, screen, within} from '@testing-library/react'
+import {act, render, screen, within} from '@testing-library/react'
 import {BrowserRouter} from 'react-router-dom'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
@@ -29,7 +30,9 @@ describe('HeaderBarBrand', () => {
     const withinNavLink = within(navLink)
     ;['TOUR', 'OF', 'HEROES'].forEach(part => withinNavLink.getByText(part))
 
-    await userEvent.click(navLink)
+    await act(async () => {
+      await userEvent.click(navLink)
+    })
     expect(window.location.pathname).toBe('/')
   })
 })

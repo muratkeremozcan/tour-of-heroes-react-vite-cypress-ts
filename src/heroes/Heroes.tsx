@@ -37,7 +37,7 @@ export default function Heroes() {
   })
 
   const handleDeleteFromModal = () => {
-    heroToDelete ? deleteHero(heroToDelete) : null
+    heroToDelete ? deleteHero(heroToDelete) : null // comment out to simulate a bug
     setShowModal(false)
   }
 

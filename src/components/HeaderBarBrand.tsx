@@ -17,7 +17,7 @@ export default function HeaderBarBrand() {
       </a>
       <NavLink data-cy="navLink" to="/" className="navbar-item navbar-home">
         <span className="tour">TOUR</span>
-        <span className="of">ON</span>
+        <span className="of">OF</span>
         <span className="heroes">HEROES</span>
       </NavLink>
     </div>

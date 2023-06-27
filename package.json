@@ -7,7 +7,7 @@
     "start:api": "json-server --watch db.json --port 4000 --delay 1000 --routes routes.json --middlewares ./node_modules/json-server-reset",
     "dev": "concurrently -k yarn:start yarn:start:api",
     "build": "vite build",
-    "test": "jest --watch",
+    "test": "jest --watch --coverage=false",
     "test:coverage": "yarn test --watchAll=false --collectCoverageFrom=src/**/*.ts* --collectCoverageFrom=!src/**/*.*.ts* --coverage",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --watch --runInBand",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|md|mdx|html)\"",

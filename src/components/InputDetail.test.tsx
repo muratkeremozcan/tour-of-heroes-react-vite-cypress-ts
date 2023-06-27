@@ -1,5 +1,5 @@
 import InputDetail from './InputDetail'
-import {render, screen} from '@testing-library/react'
+import {render, screen, waitFor} from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
 describe('InputDetail', () => {
@@ -23,8 +23,14 @@ describe('InputDetail', () => {
     const inputField = await screen.findByPlaceholderText(placeholder)
     await userEvent.clear(inputField)
     await userEvent.type(inputField, newValue)
+
     expect(inputField).toHaveDisplayValue(newValue)
     expect(onChange).toHaveBeenCalledTimes(newValue.length)
+
+    // await new Promise(resolve => setTimeout(resolve, 3000))
+    // await waitFor(
+    //   async () => await expect(onChange).toHaveBeenCalledTimes(newValue.length),
+    // )
   })
 
   it('should not allow the input field to be modified', async () => {
