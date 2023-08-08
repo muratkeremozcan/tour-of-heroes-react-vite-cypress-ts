@@ -22,7 +22,7 @@
     "cy:run-e2e": "concurrently -k yarn:start:api 'server-test 3000 cy:run'",
     "cy:open-ct": "cypress open --component --browser chrome",
     "cy:run-ct": "cypress run --component --browser chrome",
-    "cy:run-ct-fast": "yarn cy:run-ct --config video=false screenshot=false",
+    "cy:run-ct-fast": "CYPRESS_NO_COMMAND_LOG=1 yarn cy:run-ct --config video=false screenshot=false",
     "cov:combined": "yarn copy:reports && yarn combine:reports && yarn finalize:combined-report",
     "copy:reports": "(mkdir reports || true) && cp coverage-cy/coverage-final.json reports/from-cypress.json && cp coverage/coverage-final.json reports/from-jest.json",
     "combine:reports": "(mkdir .nyc_output || true) && yarn nyc merge reports && mv coverage.json .nyc_output/out.json",
