@@ -8215,10 +8215,10 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-ramda-adjunct@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/ramda-adjunct/-/ramda-adjunct-4.0.0.tgz#99873cc707e86207ec7e757385144b3f235b7c59"
-  integrity sha512-W/NiJAlZdwZ/iUkWEQQgRdH5Szqqet1WoVH9cdqDVjFbVaZHuJfJRvsxqHhvq6tZse+yVbFatLDLdVa30wBlGQ==
+ramda-adjunct@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ramda-adjunct/-/ramda-adjunct-4.1.0.tgz#80bad18dab27aea28f2482a0c6e3beb075c69b86"
+  integrity sha512-b43+fO08lDfYl/a9WumIxInNAFSBGLz+BezH7Q5q9MpDXOdqzz5qC2jSON7Yz6bkxj0xdjTlXCRce1Srbp4CjA==
 
 ramda@0.29.0:
   version "0.29.0"
