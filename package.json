@@ -42,7 +42,7 @@
     "react-icons": "4.11.0",
     "react-query": "3.39.3",
     "react-router-dom": "6.16.0",
-    "sass": "1.69.0",
+    "sass": "1.69.2",
     "vite": "4.4.11",
     "web-vitals": "3.5.0"
   },
