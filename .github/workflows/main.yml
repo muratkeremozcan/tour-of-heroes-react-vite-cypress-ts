@@ -213,14 +213,12 @@ jobs:
         with:
           component: true
           browser: chrome
-          # if you want to enable parallelization
           record: false
           parallel: false
           command: yarn cy:run-ct-changed
 
   unit-test-changed-only:
     needs: [install-dependencies]
-    name: Run Unit Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v4
