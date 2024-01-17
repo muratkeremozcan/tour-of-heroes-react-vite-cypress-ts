@@ -213,6 +213,25 @@ jobs:
         with:
           component: true
           browser: chrome
+          # if you want to enable parallelization
           record: false
           parallel: false
           command: yarn cy:run-ct-changed
+
+  unit-test-changed-only:
+    needs: [install-dependencies]
+    name: Run Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Install dependencies
+        uses: cypress-io/github-action@v6.6.0
+        with:
+          runTests: false
+      - name: unit-test
+        run: yarn test:jest-changed

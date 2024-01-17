@@ -28,7 +28,8 @@
     "combine:reports": "(mkdir .nyc_output || true) && yarn nyc merge reports && mv coverage.json .nyc_output/out.json",
     "finalize:combined-report": "yarn nyc report --reporter html --reporter text --reporter json-summary --report-dir combined-coverage",
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage",
-    "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh"
+    "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh",
+    "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh"
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",
