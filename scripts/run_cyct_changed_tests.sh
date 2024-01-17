@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Use GitHub Actions environment variable for the branch name
+# Use GitHub Actions environment variable for the branch name if it exists, otherwise use the local branch name
 current_branch=${GITHUB_HEAD_REF:-$(git branch --show-current)}
 
 # Get the list of changed files compared to the main branch
