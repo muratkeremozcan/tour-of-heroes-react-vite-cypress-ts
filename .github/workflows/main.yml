@@ -208,6 +208,11 @@ jobs:
       - name: Fetch main branch
         run: git fetch origin main:main
 
-      # Custom script to find changed spec files
-      - name: Run Changed Cypress Tests
-        run: yarn cy:run-ct-changed
+      - name: Only run changed component tests 🧪
+        uses: cypress-io/github-action@v6.6.0
+        with:
+          component: true
+          browser: chrome
+          record: false
+          parallel: false
+          command: yarn cy:run-ct-changed
