@@ -7,6 +7,11 @@ concurrency:
   group: ${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
+env:
+  # if you want to enable parallelization
+  CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   install-dependencies:
     name: Install Dependencies
@@ -14,7 +19,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -30,7 +35,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -63,7 +68,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -81,7 +86,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -103,7 +108,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -125,10 +130,6 @@ jobs:
           parallel: true
           group: e2e-tests
           tag: e2e-tests
-        env:
-          # if you want to enable parallelization
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # if you want to enable codecov
       - name: Upload artifacts (Coverage_step3)
@@ -156,7 +157,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -177,10 +178,6 @@ jobs:
           parallel: true
           group: ct-tests
           tag: ct-tests
-        env:
-          # if you want to enable parallelization
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # if you want to enable codecov
       - name: Upload artifacts (Coverage_step3)
@@ -196,3 +193,18 @@ jobs:
           directory: coverage-cy/
           flags: cypress-ct-coverage
           token: ${{ secrets.CODECOV_TOKEN }}
+
+  cypress-ct-changed-only:
+    needs: [install-dependencies]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      # Custom script to find changed spec files
+      - name: Run Changed Cypress Tests
+        run: yarn cy:run-ct-changed
