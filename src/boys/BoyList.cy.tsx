@@ -1,5 +1,4 @@
 import BoyList from './BoyList'
-
 import boys from '../../cypress/fixtures/boys.json'
 
 describe('BoyList', () => {

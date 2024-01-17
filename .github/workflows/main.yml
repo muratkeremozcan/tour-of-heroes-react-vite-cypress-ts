@@ -205,6 +205,9 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      - name: Fetch main branch
+        run: git fetch origin main:main
+
       # Custom script to find changed spec files
       - name: Run Changed Cypress Tests
         run: yarn cy:run-ct-changed
