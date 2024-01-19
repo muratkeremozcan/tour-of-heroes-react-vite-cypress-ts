@@ -29,7 +29,8 @@
     "finalize:combined-report": "yarn nyc report --reporter html --reporter text --reporter json-summary --report-dir combined-coverage",
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage",
     "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh",
-    "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh"
+    "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh",
+    "trace-dependencies": "spec-change --folder src --save-deps deps.json"
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",
@@ -78,7 +79,7 @@
     "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-no-only-tests": "3.1.0",
     "eslint-plugin-prettier": "4.2.1",
-    "find-cypress-specs": "^1.39.0",
+    "find-cypress-specs": "^1.40.0",
     "husky": "4.3.8",
     "istanbul": "0.4.5",
     "istanbul-lib-coverage": "3.2.2",

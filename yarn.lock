@@ -5359,10 +5359,10 @@ find-cache-dir@^3.2.0:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
-find-cypress-specs@^1.39.0:
-  version "1.39.0"
-  resolved "https://registry.yarnpkg.com/find-cypress-specs/-/find-cypress-specs-1.39.0.tgz#7327948a36963e5d334118c24530c9f78324b988"
-  integrity sha512-yVBOgfJTAyUV6tE8Z33wrqFI6+UTrpCob3rfgR229gvAwh7IfY6Cog1W5OOw+bAV3LNjo9KHwO/gUR8InkRm/Q==
+find-cypress-specs@^1.40.0:
+  version "1.40.0"
+  resolved "https://registry.yarnpkg.com/find-cypress-specs/-/find-cypress-specs-1.40.0.tgz#079af38bac329aab241cc931febae503d79498a1"
+  integrity sha512-mWDS58zOqgPiJVSOExMKGI1RfZB8jPIMGt2NnZQ7/rqUaT3Ynpggz0XvEVZt2u+olCV28D+1tzVWhhlJdB77YQ==
   dependencies:
     "@actions/core" "^1.10.0"
     arg "^5.0.1"
@@ -5374,7 +5374,7 @@ find-cypress-specs@^1.39.0:
     pluralize "^8.0.0"
     require-and-forget "^1.0.1"
     shelljs "^0.8.5"
-    spec-change "^1.7.1"
+    spec-change "^1.9.0"
     ts-node "^10.9.1"
 
 find-test-names@1.28.18:
@@ -9467,10 +9467,10 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.12.tgz"
   integrity sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==
 
-spec-change@^1.7.1:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/spec-change/-/spec-change-1.8.0.tgz#3e4a54255217a0d95a55e9758fb30e73f6aeccaf"
-  integrity sha512-o1VePnU/RZJdN8zlCuMwqqwoG2fkovBSOeSQevo87pge81oQeNTqZisaf1n72Y5VgHO0LG2/Q9O32O2UUIFAaw==
+spec-change@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/spec-change/-/spec-change-1.9.0.tgz#4e163094a32556da19f2e936d73e45d4836ec73e"
+  integrity sha512-HSooiIIZgt8jl460vTSFWP1eqyHCFc+6tPIIIcX05d0rdoifJ+PguGT8ajb7/X2LkjoRWhE4AG9+TE2TmzVHUg==
   dependencies:
     arg "^5.0.2"
     debug "^4.3.4"
