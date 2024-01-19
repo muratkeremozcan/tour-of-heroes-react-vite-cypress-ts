@@ -206,6 +206,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install dependencies
+        uses: cypress-io/github-action@v6.6.1
+        with:
+          runTests: false
+
       - name: Compute changed Cy component specs
         id: changed
         run: yarn changed-component-specs --set-gh-outputs
