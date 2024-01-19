@@ -30,7 +30,8 @@
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage",
     "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh",
     "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh",
-    "trace-dependencies": "spec-change --folder src --save-deps deps.json"
+    "trace-dependencies": "spec-change --folder src --save-deps deps.json",
+    "changed-component-specs": "find-cypress-specs --component --branch main --parent --trace-imports src --cache-trace"
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",
