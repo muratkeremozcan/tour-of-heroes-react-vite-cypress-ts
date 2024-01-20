@@ -5401,10 +5401,10 @@ find-cache-dir@^3.2.0:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
-find-cypress-specs@^1.41.1:
-  version "1.41.1"
-  resolved "https://registry.yarnpkg.com/find-cypress-specs/-/find-cypress-specs-1.41.1.tgz#827a29e60a3db84b59c81114ffabb836baf0f0c3"
-  integrity sha512-mLZBVQQIj1tX2MT3bA92sLMpvIBp9fZ3SBEaQqmT4m4+iSFGswV6Gx71163dpgFPCdNJFMGQw9lMaaNnsY98PQ==
+find-cypress-specs@^1.41.4:
+  version "1.41.4"
+  resolved "https://registry.yarnpkg.com/find-cypress-specs/-/find-cypress-specs-1.41.4.tgz#583595c502e785f7bb44dbb5a9ba2f09caf59e94"
+  integrity sha512-voIB7Po/bHOyXkFyU6KE1mOBWX5q+rT+wAVJKqKFKFFDJCcvg9fGyCG/xVDga6ZznQxM4oX6uvaOAW1PKHM95g==
   dependencies:
     "@actions/core" "^1.10.0"
     arg "^5.0.1"
