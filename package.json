@@ -45,7 +45,7 @@
     "react-query": "3.39.3",
     "react-router-dom": "6.21.3",
     "sass": "1.69.6",
-    "vite": "4.5.1",
+    "vite": "4.5.2",
     "web-vitals": "3.5.1"
   },
   "devDependencies": {
