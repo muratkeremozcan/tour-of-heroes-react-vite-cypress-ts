@@ -80,7 +80,7 @@
     "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-no-only-tests": "3.1.0",
     "eslint-plugin-prettier": "4.2.1",
-    "find-cypress-specs": "^1.40.0",
+    "find-cypress-specs": "^1.41.0",
     "husky": "4.3.8",
     "istanbul": "0.4.5",
     "istanbul-lib-coverage": "3.2.2",

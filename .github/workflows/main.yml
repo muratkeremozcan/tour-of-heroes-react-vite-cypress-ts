@@ -213,7 +213,7 @@ jobs:
 
       - name: Compute changed Cy component specs
         id: changed
-        run: yarn changed-component-specs --set-gha-outputs
+        run: yarn changed-component-specs --set-gha-outputs --gha-summary
 
       - name: Only run changed component tests 🧪
         uses: cypress-io/github-action@v6.6.1
