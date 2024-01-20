@@ -201,21 +201,29 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+      # check out all branches so we can compute the changed files
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
 
-      - name: Fetch main branch
-        run: git fetch origin main:main
+      - name: Install dependencies
+        uses: cypress-io/github-action@v6.6.1
+        with:
+          runTests: false
+
+      - name: Compute changed Cy component specs
+        id: changed
+        run: yarn changed-component-specs --set-gha-outputs --gha-summary
 
       - name: Only run changed component tests 🧪
         uses: cypress-io/github-action@v6.6.1
+        if: ${{ steps.changed.outputs.changedSpecsN > 0 }}
         with:
           component: true
           browser: chrome
           record: false
           parallel: false
-          command: yarn cy:run-ct-changed
+          spec: ${{ steps.changed.outputs.changedSpecs }}
 
   unit-test-changed-only:
     needs: [install-dependencies]

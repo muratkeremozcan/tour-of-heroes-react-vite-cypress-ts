@@ -1,0 +1,195 @@
+{
+  "warning": "This is a machine-generated file, do not modify it manually. Use https://github.com/bahmutov/spec-change",
+  "generatedAt": "2024-01-19T23:40:00.868Z",
+  "folder": "src",
+  "fileMask": "**/*.{js,ts,jsx,tsx}",
+  "deps": {
+    "About.tsx": ["App.cy.tsx", "App.tsx", "index.tsx"],
+    "App.tsx": ["App.cy.tsx", "index.tsx"],
+    "styles.scss": ["App.cy.tsx", "App.tsx", "index.tsx"],
+    "index.css": ["index.tsx"],
+    "reportWebVitals.ts": ["index.tsx"],
+    "boys/BoyDetail.tsx": [
+      "boys/BoyDetail.cy.tsx",
+      "boys/BoyDetail.test.tsx",
+      "boys/Boys.cy.tsx",
+      "boys/Boys.test.tsx",
+      "boys/Boys.tsx"
+    ],
+    "test-utils.tsx": [
+      "boys/BoyDetail.test.tsx",
+      "boys/BoyList.test.tsx",
+      "boys/Boys.test.tsx",
+      "heroes/HeroDetail.test.tsx",
+      "heroes/HeroList.test.tsx",
+      "heroes/Heroes.test.tsx",
+      "villains/VillainDetail.test.tsx",
+      "villains/VillainList.test.tsx",
+      "villains/Villains.test.tsx"
+    ],
+    "boys/BoyList.tsx": [
+      "boys/BoyList.cy.tsx",
+      "boys/BoyList.test.tsx",
+      "boys/Boys.cy.tsx",
+      "boys/Boys.test.tsx",
+      "boys/Boys.tsx"
+    ],
+    "boys/Boys.tsx": ["boys/Boys.cy.tsx", "boys/Boys.test.tsx"],
+    "components/ButtonFooter.tsx": [
+      "components/ButtonFooter.cy.tsx",
+      "components/ButtonFooter.test.tsx"
+    ],
+    "components/CardContent.tsx": [
+      "components/CardContent.cy.tsx",
+      "components/CardContent.test.tsx"
+    ],
+    "components/ErrorComp.tsx": [
+      "components/ErrorComp.cy.tsx",
+      "components/ErrorComp.test.tsx"
+    ],
+    "components/HeaderBar.tsx": [
+      "components/HeaderBar.cy.tsx",
+      "components/HeaderBar.test.tsx"
+    ],
+    "components/HeaderBarBrand.tsx": [
+      "components/HeaderBar.cy.tsx",
+      "components/HeaderBar.test.tsx",
+      "components/HeaderBar.tsx",
+      "components/HeaderBarBrand.cy.tsx",
+      "components/HeaderBarBrand.test.tsx"
+    ],
+    "components/InputDetail.tsx": [
+      "components/InputDetail.cy.tsx",
+      "components/InputDetail.test.tsx"
+    ],
+    "components/ListHeader.tsx": [
+      "components/ListHeader.cy.tsx",
+      "components/ListHeader.test.tsx"
+    ],
+    "components/Modal.tsx": [
+      "components/ModalYesNo.cy.tsx",
+      "components/ModalYesNo.test.tsx",
+      "components/ModalYesNo.tsx"
+    ],
+    "components/ModalYesNo.tsx": [
+      "components/ModalYesNo.cy.tsx",
+      "components/ModalYesNo.test.tsx"
+    ],
+    "components/NavBar.tsx": [
+      "components/NavBar.cy.tsx",
+      "components/NavBar.test.tsx"
+    ],
+    "components/NotFound.tsx": [
+      "components/NotFound.cy.tsx",
+      "components/NotFound.test.tsx"
+    ],
+    "components/PageSpinner.tsx": [
+      "components/PageSpinner.cy.tsx",
+      "components/PageSpinner.test.tsx"
+    ],
+    "components/Spinner.tsx": [
+      "components/PageSpinner.cy.tsx",
+      "components/PageSpinner.test.tsx",
+      "components/PageSpinner.tsx",
+      "components/Spinner.cy.tsx",
+      "components/Spinner.test.tsx"
+    ],
+    "heroes/HeroDetail.tsx": [
+      "heroes/HeroDetail.cy.tsx",
+      "heroes/HeroDetail.test.tsx",
+      "heroes/Heroes.cy.tsx",
+      "heroes/Heroes.test.tsx",
+      "heroes/Heroes.tsx"
+    ],
+    "heroes/HeroList.tsx": [
+      "heroes/HeroList.cy.tsx",
+      "heroes/HeroList.test.tsx",
+      "heroes/Heroes.cy.tsx",
+      "heroes/Heroes.test.tsx",
+      "heroes/Heroes.tsx"
+    ],
+    "heroes/Heroes.tsx": ["heroes/Heroes.cy.tsx", "heroes/Heroes.test.tsx"],
+    "api/api.ts": [
+      "hooks/useDeleteEntity.ts",
+      "hooks/useGetEntities.ts",
+      "hooks/usePostEntity.ts",
+      "hooks/usePutEntity.ts"
+    ],
+    "models/Boy.ts": ["models/types.ts"],
+    "models/Hero.ts": ["models/types.ts"],
+    "models/Villain.ts": ["models/types.ts"],
+    "villains/VillainDetail.tsx": [
+      "villains/VillainDetail.cy.tsx",
+      "villains/VillainDetail.test.tsx",
+      "villains/Villains.cy.tsx",
+      "villains/Villains.test.tsx",
+      "villains/Villains.tsx"
+    ],
+    "villains/VillainList.tsx": [
+      "villains/VillainList.cy.tsx",
+      "villains/VillainList.test.tsx",
+      "villains/Villains.cy.tsx",
+      "villains/Villains.test.tsx",
+      "villains/Villains.tsx"
+    ],
+    "villains/Villains.tsx": [
+      "villains/Villains.cy.tsx",
+      "villains/Villains.test.tsx"
+    ],
+    "App.cy.tsx": ["App.cy.tsx"],
+    "index.tsx": ["index.tsx"],
+    "react-app-env.d.ts": ["react-app-env.d.ts"],
+    "setupTests.ts": ["setupTests.ts"],
+    "boys/BoyDetail.cy.tsx": ["boys/BoyDetail.cy.tsx"],
+    "boys/BoyDetail.test.tsx": ["boys/BoyDetail.test.tsx"],
+    "boys/BoyList.cy.tsx": ["boys/BoyList.cy.tsx"],
+    "boys/BoyList.test.tsx": ["boys/BoyList.test.tsx"],
+    "boys/Boys.cy.tsx": ["boys/Boys.cy.tsx"],
+    "boys/Boys.test.tsx": ["boys/Boys.test.tsx"],
+    "components/ButtonFooter.cy.tsx": ["components/ButtonFooter.cy.tsx"],
+    "components/ButtonFooter.test.tsx": ["components/ButtonFooter.test.tsx"],
+    "components/CardContent.cy.tsx": ["components/CardContent.cy.tsx"],
+    "components/CardContent.test.tsx": ["components/CardContent.test.tsx"],
+    "components/ErrorComp.cy.tsx": ["components/ErrorComp.cy.tsx"],
+    "components/ErrorComp.test.tsx": ["components/ErrorComp.test.tsx"],
+    "components/HeaderBar.cy.tsx": ["components/HeaderBar.cy.tsx"],
+    "components/HeaderBar.test.tsx": ["components/HeaderBar.test.tsx"],
+    "components/HeaderBarBrand.cy.tsx": ["components/HeaderBarBrand.cy.tsx"],
+    "components/HeaderBarBrand.test.tsx": [
+      "components/HeaderBarBrand.test.tsx"
+    ],
+    "components/InputDetail.cy.tsx": ["components/InputDetail.cy.tsx"],
+    "components/InputDetail.test.tsx": ["components/InputDetail.test.tsx"],
+    "components/ListHeader.cy.tsx": ["components/ListHeader.cy.tsx"],
+    "components/ListHeader.test.tsx": ["components/ListHeader.test.tsx"],
+    "components/ModalYesNo.cy.tsx": ["components/ModalYesNo.cy.tsx"],
+    "components/ModalYesNo.test.tsx": ["components/ModalYesNo.test.tsx"],
+    "components/NavBar.cy.tsx": ["components/NavBar.cy.tsx"],
+    "components/NavBar.test.tsx": ["components/NavBar.test.tsx"],
+    "components/NotFound.cy.tsx": ["components/NotFound.cy.tsx"],
+    "components/NotFound.test.tsx": ["components/NotFound.test.tsx"],
+    "components/PageSpinner.cy.tsx": ["components/PageSpinner.cy.tsx"],
+    "components/PageSpinner.test.tsx": ["components/PageSpinner.test.tsx"],
+    "components/Spinner.cy.tsx": ["components/Spinner.cy.tsx"],
+    "components/Spinner.test.tsx": ["components/Spinner.test.tsx"],
+    "heroes/HeroDetail.cy.tsx": ["heroes/HeroDetail.cy.tsx"],
+    "heroes/HeroDetail.test.tsx": ["heroes/HeroDetail.test.tsx"],
+    "heroes/HeroList.cy.tsx": ["heroes/HeroList.cy.tsx"],
+    "heroes/HeroList.test.tsx": ["heroes/HeroList.test.tsx"],
+    "heroes/Heroes.cy.tsx": ["heroes/Heroes.cy.tsx"],
+    "heroes/Heroes.test.tsx": ["heroes/Heroes.test.tsx"],
+    "hooks/useDeleteEntity.ts": ["hooks/useDeleteEntity.ts"],
+    "hooks/useEntityParams.ts": ["hooks/useEntityParams.ts"],
+    "hooks/useGetEntities.ts": ["hooks/useGetEntities.ts"],
+    "hooks/usePostEntity.ts": ["hooks/usePostEntity.ts"],
+    "hooks/usePutEntity.ts": ["hooks/usePutEntity.ts"],
+    "hooks/useVillainsContext.ts": ["hooks/useVillainsContext.ts"],
+    "models/types.ts": ["models/types.ts"],
+    "villains/VillainDetail.cy.tsx": ["villains/VillainDetail.cy.tsx"],
+    "villains/VillainDetail.test.tsx": ["villains/VillainDetail.test.tsx"],
+    "villains/VillainList.cy.tsx": ["villains/VillainList.cy.tsx"],
+    "villains/VillainList.test.tsx": ["villains/VillainList.test.tsx"],
+    "villains/Villains.cy.tsx": ["villains/Villains.cy.tsx"],
+    "villains/Villains.test.tsx": ["villains/Villains.test.tsx"]
+  }
+}
