@@ -71,7 +71,7 @@
     "concurrently": "8.2.2",
     "cypress": "13.8.1",
     "esbuild": "0.21.1",
-    "eslint": "8.57.0",
+    "eslint": "9.2.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-react-app": "7.0.1",
     "eslint-plugin-chai-friendly": "0.7.2",
