@@ -9796,10 +9796,10 @@ vite-plugin-environment@1.1.3:
   resolved "https://registry.yarnpkg.com/vite-plugin-environment/-/vite-plugin-environment-1.1.3.tgz#d01a04abb2f69730a4866c9c9db51d3dab74645b"
   integrity sha512-9LBhB0lx+2lXVBEWxFZC+WO7PKEyE/ykJ7EPWCq95NEcCpblxamTbs5Dm3DLBGzwODpJMEnzQywJU8fw6XGGGA==
 
-vite-plugin-istanbul@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-istanbul/-/vite-plugin-istanbul-6.0.0.tgz#630c1404c09ae242f84b819f001abe4db3f8bf2e"
-  integrity sha512-Vwh2XdesjcLwaPbHSOiWHh+0s7CNovQTPEjUCTkqmJUe0FN2TKsOp0qpoaklOuwrKlL9elhD5fPFxi5lmG62zA==
+vite-plugin-istanbul@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-istanbul/-/vite-plugin-istanbul-6.0.2.tgz#242a57b20d540adc49631f9e6c174a1c3559ece7"
+  integrity sha512-0/sKwjEEIwbEyl43xX7onX3dIbMJAsigNsKyyVPalG1oRFo5jn3qkJbS2PUfp9wrr3piy1eT6qRoeeum2p4B2A==
   dependencies:
     "@istanbuljs/load-nyc-config" "^1.1.0"
     espree "^10.0.1"
