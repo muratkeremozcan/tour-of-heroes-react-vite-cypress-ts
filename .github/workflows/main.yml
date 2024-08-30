@@ -19,12 +19,12 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
 
@@ -35,12 +35,12 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
       - name: unit-test
@@ -68,12 +68,12 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
       - name: lint
@@ -86,12 +86,12 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
       - name: typecheck
@@ -108,7 +108,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -120,7 +120,7 @@ jobs:
           sudo apt-get install ./google-chrome-stable_current_amd64.deb
 
       - name: Cypress e2e tests 🧪
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           start: yarn dev
           wait-on: 'http://localhost:3000'
@@ -157,7 +157,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -169,7 +169,7 @@ jobs:
           sudo apt-get install ./google-chrome-stable_current_amd64.deb
 
       - name: Cypress component tests 🧪
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           component: true
           browser: chrome
@@ -200,7 +200,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -209,7 +209,7 @@ jobs:
         run: git fetch origin main:main
 
       - name: Only run changed component tests 🧪
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           component: true
           browser: chrome
@@ -223,12 +223,12 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.1
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
       - name: unit-test
