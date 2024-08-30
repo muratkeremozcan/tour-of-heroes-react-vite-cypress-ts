@@ -48,9 +48,9 @@ jobs:
 
       # if you want to enable codecov
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4.3.0
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage
+          name: coverage-cy-ct-${{ matrix.machines }}
           path: coverage/
           retention-days: 1
 
@@ -133,9 +133,9 @@ jobs:
 
       # if you want to enable codecov
       - name: Upload artifacts (Coverage_step3)
-        uses: actions/upload-artifact@v4.3.0
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage-cy-e2e
+          name: coverage-cy-ct-${{ matrix.machines }}
           path: coverage-cy/
           retention-days: 1
 
@@ -181,9 +181,9 @@ jobs:
 
       # if you want to enable codecov
       - name: Upload artifacts (Coverage_step3)
-        uses: actions/upload-artifact@v4.3.0
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage-cy-ct
+          name: coverage-cy-ct-${{ matrix.machines }}
           path: coverage-cy/
           retention-days: 1
 
