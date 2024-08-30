@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -68,7 +68,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -86,7 +86,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -108,7 +108,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -157,7 +157,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -200,7 +200,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -223,7 +223,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 18
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
