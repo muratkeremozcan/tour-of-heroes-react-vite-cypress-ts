@@ -1317,12 +1317,12 @@
     rimraf "^4.4.1"
     sort-array "^4.1.5"
 
-"@bahmutov/cypress-esbuild-preprocessor@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@bahmutov/cypress-esbuild-preprocessor/-/cypress-esbuild-preprocessor-2.2.0.tgz#ba5b6bf96e83da3cb4d0cc2baedd0eeee8c84a4f"
-  integrity sha512-pTvxRi6+OFsXy6uCn/HlO5zi0fUZWbiCtTiLTDf/+kgEfZ/Y8WIxZ2pjuir9MEM8prQenBw60TLcM0wcazh7+Q==
+"@bahmutov/cypress-esbuild-preprocessor@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@bahmutov/cypress-esbuild-preprocessor/-/cypress-esbuild-preprocessor-2.2.3.tgz#2b3a3fb9940069c56f0a294e4134df092961ac5d"
+  integrity sha512-YdrZxCULKC3k5H5bjBeL6boadcsSXsdnJf6GQGHMRcqzUFzDQC1sZGNblauJzUU34XbA4Sko5ym4KajKf4WwAw==
   dependencies:
-    debug "4.3.4"
+    debug "4.3.7"
 
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
@@ -4222,6 +4222,13 @@ debug@4.3.3:
   integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
+
+debug@4.3.7:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
+  integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
+  dependencies:
+    ms "^2.1.3"
 
 debug@^3.1.0, debug@^3.2.7:
   version "3.2.7"
@@ -7448,7 +7455,7 @@ ms@2.1.2:
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-ms@2.1.3, ms@^2.1.1:
+ms@2.1.3, ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
