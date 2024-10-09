@@ -66,7 +66,7 @@
     "@types/react-icons": "3.0.0",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
-    "changed-test-ids": "^1.17.0",
+    "changed-test-ids": "1.17.1",
     "concurrently": "8.2.2",
     "cypress": "13.15.0",
     "esbuild": "0.21.2",

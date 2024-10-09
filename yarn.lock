@@ -3862,10 +3862,10 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-changed-test-ids@^1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/changed-test-ids/-/changed-test-ids-1.17.0.tgz#1e12a0ba6b2c344367231f3131f150548371dfc3"
-  integrity sha512-AjXaex1G8YjolKFwHRcal/Bedj+765eA+2kfGV9P0EvKTmZTARl4XF5OYurpbTty192vy/w5ahMbOS4M8keV8g==
+changed-test-ids@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/changed-test-ids/-/changed-test-ids-1.17.1.tgz#aca575ac46212ffd1ed42130926842b08bbb8abb"
+  integrity sha512-r0H85a77lLfKZeMQBgwJt6a4W70MoPbxQg9RYNB1zOevC9xXakqxiU/F+3h4AaX3yGIeWDrxTKqNyUpBN1QAng==
   dependencies:
     "@actions/core" "^1.10.1"
     "@babel/core" "^7.23.0"
