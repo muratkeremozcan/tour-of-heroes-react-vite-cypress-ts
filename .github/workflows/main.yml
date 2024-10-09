@@ -176,7 +176,12 @@ jobs:
 
       - name: Find Cypress specs for changed source files
         id: find-ids
-        run: yarn find:ids-ct
+        run: |
+          yarn find:ids-ct
+          if [ -z "${{ steps.find-ids.outputs.specsToRun }}" ]; then
+            echo "No relevant changes detected, skipping tests."
+            exit 0
+          fi
 
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v6
