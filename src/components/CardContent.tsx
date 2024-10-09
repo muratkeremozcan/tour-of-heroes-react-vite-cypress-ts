@@ -11,5 +11,3 @@ export default function CardContent({name, description}: CardContentProps) {
     </div>
   )
 }
-
-// simple change
