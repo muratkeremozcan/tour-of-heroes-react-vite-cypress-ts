@@ -170,10 +170,7 @@ jobs:
 
       - name: Find Cypress specs for changed source files
         id: find-ids
-        run: |
-          npx find-ids --sources 'src/**/*.jsx' \
-            --specs 'cypress/e2e/**/*.cy.js' --command getByTestId,containsTestId \
-            --branch main --parent --set-gha-outputs
+        run: yarn find:ids-ct
 
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v6
