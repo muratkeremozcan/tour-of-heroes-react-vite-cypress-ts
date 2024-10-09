@@ -30,7 +30,7 @@
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage",
     "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh",
     "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh",
-    "find:ids-ct": "yarn run find-ids --specs 'src/**/*.cy.tsx' --command getByCy,getByCyLike --branch main --parent --set-gha-outputs"
+    "find:ids-ct": "yarn find-ids --specs 'src/**/*.cy.tsx' --command getByCy,getByCyLike --branch main --parent --set-gha-outputs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",

@@ -168,6 +168,11 @@ jobs:
           sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install ./google-chrome-stable_current_amd64.deb
 
+      - name: Install 📦
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+
       - name: Find Cypress specs for changed source files
         id: find-ids
         run: yarn find:ids-ct
@@ -175,6 +180,7 @@ jobs:
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v6
         with:
+          install: false
           component: true
           browser: chrome
           # if you want to enable parallelization
