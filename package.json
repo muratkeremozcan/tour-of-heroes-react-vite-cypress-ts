@@ -29,7 +29,8 @@
     "finalize:combined-report": "yarn nyc report --reporter html --reporter text --reporter json-summary --report-dir combined-coverage",
     "cov:reset": "rm -rf .nyc_output && rm -rf reports && rm -rf coverage && rm -rf coverage-cy && rm -rf combined-coverage",
     "cy:run-ct-changed": "chmod +x ./scripts/run_cyct_changed_tests.sh && ./scripts/run_cyct_changed_tests.sh",
-    "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh"
+    "test:jest-changed": "chmod +x ./scripts/run_jest_changed_tests.sh && ./scripts/run_jest_changed_tests.sh",
+    "find:ids-ct": "yarn find-ids --sources 'src/**/*.ts*' --specs 'src/**/*.cy.tsx' --command getByCy,getByCyLike --branch main --parent --set-gha-outputs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",
@@ -66,9 +67,11 @@
     "@types/react-icons": "3.0.0",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
+    "changed-test-ids": "1.17.1",
     "concurrently": "8.2.2",
     "cypress": "13.15.0",
     "esbuild": "0.21.2",
+    "esbuild-plugin-polyfill-node": "0.3.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-react-app": "7.0.1",
@@ -76,7 +79,6 @@
     "eslint-plugin-cypress": "4.0.0",
     "eslint-plugin-no-only-tests": "3.1.0",
     "eslint-plugin-prettier": "4.2.1",
-    "esbuild-plugin-polyfill-node": "0.3.0",
     "husky": "4.3.8",
     "istanbul": "0.4.5",
     "istanbul-lib-coverage": "3.2.2",

@@ -148,10 +148,10 @@ jobs:
 
   cypress-ct-test:
     # if you want to enable parallelization
-    strategy:
-      fail-fast: false
-      matrix:
-        machines: [1, 2, 3]
+    # strategy:
+    #   fail-fast: false
+    #   matrix:
+    #     machines: [1, 2, 3]
     needs: [install-dependencies]
     runs-on: ubuntu-latest
     steps:
@@ -161,6 +161,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
 
       - name: Install Specific Chrome Version
         run: |
@@ -168,28 +169,44 @@ jobs:
           sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install ./google-chrome-stable_current_amd64.deb
 
+      - name: Install 📦
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+
+      - name: Find Cypress specs for changed source files
+        id: find-ids
+        run: |
+          yarn find:ids-ct
+          if [ -z "${{ steps.find-ids.outputs.specsToRun }}" ]; then
+            echo "No relevant changes detected, skipping tests."
+            exit 0
+          fi
+
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v6
         with:
+          install: false
           component: true
           browser: chrome
           # if you want to enable parallelization
           record: true
-          parallel: true
+          parallel: false
           group: ct-tests
           tag: ct-tests
+          spec: ${{ steps.find-ids.outputs.specsToRun }}
 
-      # if you want to enable codecov
-      - name: Upload artifacts (Coverage_step3)
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-cy-ct-${{ matrix.machines }}
-          path: coverage-cy/
-          retention-days: 1
+      # # if you want to enable codecov
+      # - name: Upload artifacts (Coverage_step3)
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: coverage-cy-ct-${{ matrix.machines }}
+      #     path: coverage-cy/
+      #     retention-days: 1
 
-      - name: ✅ Upload CT coverage to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          directory: coverage-cy/
-          flags: cypress-ct-coverage
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - name: ✅ Upload CT coverage to Codecov
+      #   uses: codecov/codecov-action@v4
+      #   with:
+      #     directory: coverage-cy/
+      #     flags: cypress-ct-coverage
+      #     token: ${{ secrets.CODECOV_TOKEN }}
