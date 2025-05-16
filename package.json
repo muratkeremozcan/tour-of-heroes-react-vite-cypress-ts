@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@bahmutov/cypress-code-coverage": "2.6.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "2.2.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.5",
     "@cypress/vite-plugin-cypress-esm": "^1.0.0",
     "@faker-js/faker": "8.4.1",
     "@testing-library/cypress": "10.0.3",
